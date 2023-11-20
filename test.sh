@@ -1,5 +1,5 @@
 #!/bin/sh
-source ./test.env
+source "./test.env"
 # Проверяем, что передан аргумент
 if [ $# -eq 0 ]; then
   echo "Usage: $0 <variable_name>"
