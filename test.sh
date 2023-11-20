@@ -12,5 +12,9 @@ variable_name=$1
 # Получаем значение переменной
 variable_value="${!variable_name}"
 
-# Выводим значение переменной
-echo "Значение переменной $variable_name: $variable_value"
+if [ -n "$variable_value" ]; then
+  # Выводим значение переменной
+  echo "Значение переменной $variable_name: $variable_value"
+else
+  echo "Значение переменной пустое"
+fi
